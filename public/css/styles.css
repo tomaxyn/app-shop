@@ -1,0 +1,242 @@
+
+
+
+.btn-right {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 16;
+  -moz-border-radius: 16;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 0px 4px #666666;
+  -moz-box-shadow: 0px 0px 4px #666666;
+  box-shadow: 0px 0px 4px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 0.65em;
+  border: solid #1f628d 6px;
+  text-decoration: none;
+}
+
+.btn-right:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.btn-center {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 16;
+  -moz-border-radius: 16;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 0px 4px #666666;
+  -moz-box-shadow: 0px 0px 4px #666666;
+  box-shadow: 0px 0px 4px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 1.9rem;
+  padding: 0.6em;
+  border: solid #1f628d 6px;
+  text-decoration: none;
+}
+
+.btn-center:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.btn-left {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 16;
+  -moz-border-radius: 16;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 0px 4px #666666;
+  -moz-box-shadow: 0px 0px 4px #666666;
+  box-shadow: 0px 0px 4px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 0.65em;
+  border: solid #1f628d 6px;
+  text-decoration: none;
+}
+
+.btn-left:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.navbar .navbar-nav > li > a{
+	text-transform: none;
+  font-size: 1.45rem;
+}
+
+.mailist{
+	font-size: 2rem;
+}
+
+
+.rehome{
+	font-size: 2rem;
+}
+
+.logoizi{
+  width: 30px;
+  border-radius: 5px;
+}
+
+.recuadro1{
+  background: #3477D4;
+  border: 1px solid #112233;
+}
+
+.coorina{
+  color: #3766a4;
+}
+
+#myFooter {
+    background-color: #3a3f46;
+    color: white;
+    border-radius: 3px;
+}
+
+#myFooter .row {
+    margin-bottom: 1px;
+}
+
+#myFooter .info{
+    text-align: justify; 
+    color: #afb0b1;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter .logo{
+    margin-top: 10px;
+}
+
+#myFooter .second-bar .logo a{
+    color:white;
+    font-size: 28px;
+    float: left;
+    font-weight: bold;
+    line-height: 68px;
+    margin: 0;
+    padding: 0;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 12px;
+    padding: 8px;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .second-bar {
+    text-align: center;
+    background-color: #33373e;
+    text-align: center;
+}
+
+#myFooter .second-bar a {
+    font-size: 22px;
+    color: #9fa3a9;
+    padding: 10px;
+    transition: 0.2s;
+    line-height: 68px;
+}
+
+#myFooter .second-bar a:hover {
+    text-decoration: none;
+}
+
+#myFooter .social-icons {
+    float:right;
+}
+
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+
+    #myFooter .info{
+        text-align: center;
+    }
+}
+
+
+.wrapper > .header {
+  min-height: 350px;
+}
+
+.section{
+  padding: 20px 0;
+}
+
+.navbar.navbar-inverse {
+  background-color: a1b62b;
+}
+
+.qiicha{
+  font-size: 2rem;
+  color: #90a518;
+}

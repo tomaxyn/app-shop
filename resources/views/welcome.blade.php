@@ -1,95 +1,42 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app1')
 
-        <title>Laravel</title>
+@section('title', 'Bienvenido a IZI LLC')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+@section('body-class', 'fronts-page')
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+@section('content')
+ 
+<div class="header" style="background-image: url('http://www.allabouthappylife.com/wallpapers/pink-plumeria/pink-plumeria-o-2800.jpg');">
+    
+</div>    
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+<div class="main main-raised">
+  <div class="section text-center section-landing">  
+    <div class="container">                               
+                <div class="row">
+                    <div class="col-md-4">                        
+                            <a href="{{ url('/yosoyelyo')}}" class="btn btn-default btn-left">"Yo" soy el "Yo"</a>
+                            <h5>IZI LLC patrocina Self I-Dentity a través de Ho'oponopono® (SITH®) es un proceso actualizado de resolución de problemas en Hawai para liberar recuerdos que se experimentan como problemas. SITH® fue desarrollado por Morrnah Nalamaku Simeona, una hawaiano Kahuna Lapa'au. Ella fue reconocida en Hawaii como un Tesoro Viviente de Hawaii en 1983.</h5>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        
+                           <a href="{{ url('/')}}" class="btn btn-default btn-center">Encuentra una clase</a>
+                            <H5>Cuando estamos dispuestos a asumir el 100% de responsabilidad y dejar ir, lo que es correcto y perfecto se desenvuelve.  La actualización de los patrocinadores de IZI LLC Self I-Dentity a través del proceso de Ho'oponopono® proporciona "un enfoque paso a paso para lograr la paz, el equilibrio y un nuevo significado de la vida a través de la comprensión de la propia identidad de uno mismo".</h5>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{{ url('/lapazdelyo')}}" class="btn btn-default btn-right">La Paz del "Yo"</a>
+                            <h5>TENGA EN CUENTA: Solo IZI LLC está autorizada a coordinar, enseñar y utilizar Self-I-Dentity a través de materiales con derechos de autor de Ho'oponopono®. Nadie más está autorizado para enseñar este exclusivo sistema de auto-dentición a través de Ho'oponopono®. Gracias por visitar nuestro sitio Web. Le deseamos PAZ más allá de todo entendimiento.</h5>
+                        </div>
+                    </div>
+                        
         </div>
-    </body>
-</html>
+       
+    </div>
+
+</div>
+
+
+@endsection
+
