@@ -3,7 +3,7 @@
 @section('body-class', 'signup-page')
 
 @section('content')
-    <div class="header header-filter" style="background-image: url('http://www.allabouthappylife.com/wallpapers/pink-plumeria/pink-plumeria-o-2800.jpg'); background-size: cover; background-position: top center;">
+    <div class="header header-filter" style="background-image: url('img/logo1.png'); background-size: 10rem; background-position: top center;">
     <div class="container">
             <div class="row">
 					<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">

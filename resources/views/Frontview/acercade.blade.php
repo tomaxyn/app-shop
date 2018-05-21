@@ -6,18 +6,15 @@
 
 @section('content')
  
-<div class="header" style="background-image: url('http://www.allabouthappylife.com/wallpapers/pink-plumeria/pink-plumeria-o-2800.jpg');">
-    
-</div>
-    
-
 <div class="main main-raised">            
         <div class="section landing-section"> 
           <div class="container">
+            <img src="images/mainmiddle.jpg" class="headerimg1"/>
+           
             <div class="row">
-              <div class="col-md-11">                
-                   <div class="panel with-nav-tabs">
-                     <h2 class="coorina">CONTACTENOS</h2>
+              <div class="col-md-10 col-md-offset-1">
+              <h2 class="coorina">NOSOTROS</h2>                
+                   <div class="panel with-nav-tabs">                  
                 <div class="panel-heading">
                         <ul class="nav nav-tabs">                            
                             <li class="dropdown">
@@ -30,7 +27,7 @@
                                     <li><a href="#tab5warning" data-toggle="tab">Centroamérica</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#tab6warning" data-toggle="tab">SudAmérica</a></li>
+                            <li><a href="#tab6warning" data-toggle="tab">SurAmérica</a></li>
                             <li><a href="#tab7warning" data-toggle="tab">Europa</a></li>
                             <li ><a href="#tab8warning" data-toggle="tab">FSU</a></li>
                             <li ><a href="#tab9warning" data-toggle="tab">Asia</a></li>
@@ -42,7 +39,7 @@
                 <div class="panel-body">
                     <div class="tab-content">
 
-                        <div class="tab-pane fade in active" id="tab1warning">
+                        <div class="tab-pane fade" id="tab1warning">
                           <div class="container">
                             <div class="row">
                               <div class="col-md-4 col-md-offset-1">
@@ -67,8 +64,8 @@
                         </div>
                       </div>
 
-                        <div class="tab-pane fade" id="tab2warning">
-                          <h3 style="text-align: center">Estados Unidos de norteamérica</h3>
+                        <div class="tab-pane fade in active" id="tab2warning">
+                          <h3 style="text-align: center">Estados Unidos de América</h3><hr>
                            <div class="container">
                             <div class="row">
                               <div class="col-md-4"> 
@@ -222,7 +219,7 @@
                         <p>3439 NE Sandy Blvd., PMB 177</p>
                         <p>Portland, Oregon 97232, USA</p>
                         <p>Telefono: 503-757-4037</p>
-                        <p>Correo electrónico: caroline.alan@comcast.net</p>                        
+                        <p>Correo electrónico: <a class="nonblock" href="mailto:caroline.alan@comcast.net">caroline.alan@comcast.net</a></p>                     
                       </div>
                       <div class="col-md-3">
                          <p><strong>PENNSYLVANIA</strong></p>                          
@@ -261,7 +258,7 @@
                 </div>
 
                         <div class="tab-pane fade" id="tab3warning">
-                          <h3 style="text-align: center">CANADA</h3>
+                          <h3 style="text-align: center">CANADA</h3><hr>
                           <div class="container">
                             <div class="row">
                               <div class="col-md-4">                                             
@@ -297,7 +294,7 @@
                          <h3 style="text-align: center">Centroamérica</h3> 
                         </div>
                           <div class="tab-pane fade" id="tab6warning">
-                         <h3 style="text-align: center">Sudamérica</h3> 
+                         <h3 style="text-align: center">Sudamérica</h3><hr>
                          <div class="container">
                           <div class="row">
                             <div class="col-md-4 col-md-offset-3">
@@ -314,7 +311,7 @@
                       </div>
                         </div>
                          <div class="tab-pane fade" id="tab7warning">
-                         <h3 style="text-align: center">Europa</h3> 
+                         <h3 style="text-align: center">Europa</h3><hr>
                         <div class="container">
                           <div class="row">
                             <div class="col-md-4">
@@ -413,7 +410,8 @@
                         </div>                                        
                       </div>
                          <div class="tab-pane fade" id="tab8warning">
-                         <h3 style="text-align: center">Antigua Unión Sovietica</h3> <div class="container">
+                         <h3 style="text-align: center">Antigua Unión Sovietica</h3><hr>
+                        <div class="container">
                            <div class="row">
                              <div class="col-md-5 col-md-offset-2">
                                <p><strong>Kazakhstan, Ukraine, Russia y Latvia</strong></p>        
@@ -436,7 +434,7 @@
                          </div>
                         </div>
                          <div class="tab-pane fade" id="tab9warning">
-                         <h3 style="text-align: center">Asia</h3>
+                         <h3 style="text-align: center">Asia</h3><hr>
                          <div class="container">
                            <div class="row">
                             <div class="col-md-5 col-md-offset-2">
@@ -470,7 +468,7 @@
                         </div>
                       </div>
                          <div class="tab-pane fade" id="tab10warning">
-                         <h3 style="text-align: center">Australia</h3> 
+                         <h3 style="text-align: center">Australia</h3><hr> 
                          <h4 style="text-align: center">Brisbane</h4>
                          <div class="container">
                           <div class="row">
@@ -501,7 +499,7 @@
                         </div>
                       
                          <div class="tab-pane fade" id="tab11warning">
-                         <h3 style="text-align: center">Medio oriente</h3> 
+                         <h3 style="text-align: center">Medio oriente</h3><hr> 
                            <div class="container">
                           <div class="row">
                             <div class="col-md-5 col-md col-md-offset-2">

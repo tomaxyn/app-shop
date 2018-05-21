@@ -15,7 +15,18 @@ class CreateLocationsTable extends Migration
     {
         Schema::create('locations', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('city');
+            $table->string('address');
+            $table->string('phone');            
+            $table->string('web');
+            
+
+            $table->integer('event_id')->Unsigned();
+            $table->foreign('event_id')->references('id')->on('events');
+
             $table->timestamps();
+            
         });
     }
 

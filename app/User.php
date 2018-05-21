@@ -31,4 +31,11 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Rolluser::class);
     }
+
+    public function category()
+    {
+        return $this->belongsToMany(Category::class);
+    }
+
+
 }

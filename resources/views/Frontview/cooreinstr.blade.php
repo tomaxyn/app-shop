@@ -6,16 +6,13 @@
 
 @section('content')
  
-<div class="header" style="background-image: url('http://www.allabouthappylife.com/wallpapers/pink-plumeria/pink-plumeria-o-2800.jpg');">
-    
-</div>
-    
-
 <div class="main main-raised">
  <div class="container">
+            <img src="images/mainmiddle.jpg" class="headerimg1"/>
+
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-    <h2 class="coorina">IZI LLC - 2018 INSTRUCTORES Y COORDINADORES</h2>
+    <h2 class="coorina">IZI LLC - 2018 INSTRUCTORES Y COORDINADORES</h2>    
     <p><small>TENGA EN CUENTA: solo IZI LLC está autorizada a coordinar y enseñar el Self-I-Dentity a través de Ho'oponopono®. Nadie más está autorizado para enseñar este exclusivo sistema de auto-identidad a través de Ho'oponopono®. 
     Los materiales están protegidos por derechos de autor y las leyes de derechos de autor están vigentes. Es nuestra responsabilidad informarle que cualquier mal uso y abuso de los materiales de Self-I-Dentity a través de Ho'oponopono® tendrá consecuencias negativas.<a href="{{ url('/disclaim')}}">De Click aqui para el acuerdo de descargo de responsabilidad y registro</a></small></p>
 

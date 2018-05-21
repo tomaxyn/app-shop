@@ -6,10 +6,9 @@
 
 @section('content')
  
-<div class="header header-filter" style="background-image: url('http://www.allabouthappylife.com/wallpapers/pink-plumeria/pink-plumeria-o-2800.jpg');"></div>   
-
 <div class="main main-raised">
-    <div class="container">
+      <div class="container" style="width: 100%;">
+            <img src="{{ url('images/mainmiddle.jpg')}}" class="headerimg1"/>   
       
         <div class="section">
             <h2 class="title text-center">Editar producto Seleccionado</h2>

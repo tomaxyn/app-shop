@@ -15,6 +15,11 @@ class CreateInstructorsTable extends Migration
     {
         Schema::create('instructors', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->text('biography');
+            $table->string('image');
+            
+
             $table->timestamps();
         });
     }

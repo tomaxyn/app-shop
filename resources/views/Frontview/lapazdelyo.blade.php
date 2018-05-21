@@ -6,19 +6,14 @@
 
 @section('content')
  
-<div class="header" style="background-image: url('http://www.allabouthappylife.com/wallpapers/pink-plumeria/pink-plumeria-o-2800.jpg');">
-    
-</div>
-    
-
 <div class="main main-raised">
     <div class="container">
-        
+            <img src="images/mainmiddle.jpg" class="headerimg1"/>
         <div class="section landing-section"> 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h2 class="text-center title">LA PAZ DEL "YO"</h2>                    
-                    <p align="center"><strong>LA PAZ DEL “YO” <br>
+               <h2 class="coorina text-center title">LA PAZ DEL "YO"</h2>
+                 <br>  <p align="center"><strong>LA PAZ DEL “YO” <br>
           <span class="Estilo6">KA MALUHIA O KA “I” </span></strong><br>
         <br>
         La Paz esté contigo, Toda Mi Paz, <br>

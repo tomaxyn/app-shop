@@ -20,7 +20,7 @@ class AdminMiddleware
             return redirect('/login');
         }
         */        
-        if (!auth()->user()->roll->name == "Administrador"){
+        if (auth()->user()->roll->name != "Administrador"){
             return redirect('/');
         }
 

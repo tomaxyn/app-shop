@@ -2,24 +2,21 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ asset('img/favicon.png')}}">
 	<link rel="icon" type="image/png" href="../assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>@yield('title', 'IZI LLC')</title>
+	<title>@yield('title', 'IZI LLC | Dashboard')</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
-	<!--     Fonts and icons     -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+	<!--     Fonts and icons     -->	
+   	<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
 	<!-- CSS Files -->    
-    <link href="{{ asset('css/bootstrap.min.css')}}" rel="stylesheet" />
-    <link href="{{ asset('css/material-kit.css')}}" rel="stylesheet"/>
+    <link href="{{ asset('css/bootstrap.min.css')}}" rel="stylesheet" />   
     <link href="{{ asset('css/styles.css')}}" rel="stylesheet"/>
-
+   
 </head>
 
 <body class="@yield('body-class')">
@@ -33,91 +30,48 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
         		</button>
-        		<a class="navbar-brand" href="{{ url('/')}}">IZI LLC
+        		<a class="navbar-brand" href="{{ url('/')}}"><img alt="Brand" src="{{ asset('img/logo1.png')}}" width="30px">
                     </a>
         	</div>
 
         	<div class="collapse navbar-collapse" id="navigation-example">
-                <ul class="nav navbar-nav">
-                <li class=""><a href="{{ url('/yosoyelyo')}}">"Yo" soy el "Yo"</a></li>
-                
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acerca de nosotros<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="{{ url('/acercade')}}">Contactenos</a></li>
-                    <li><a href="#">Instructores Coordinadores</a></li>
-                    <li><a href="#">Biografias</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Afiliados</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Boletines Informativos</a></li>
-                    <li><a href="#">Articulos</a></li>
-                    <li><a href="#">Testimonios</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Unete a nuestra lista de correo</a></li>
-                    <li><a href="#">¿Quién está a cargo?</a></li>
-
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Horarios e Información de clases <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Lista completa de clases SITH®</a></li>
-                    <li><a href="#">Programa básico I</a></li>
-                    <li><a href="#">Programa básico II</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Programa de Ho'oponopono de negocios</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Programa de Ho'oponopono de salud</a></li>
-                    <li><a href="#">Programa de clase en línea</a></li>
-                    <li><a href="#">Absentee a lo largo del mundo</a></li>
-                     <li><a href="#">Tarifas e información</a></li>
-                  </ul>
-                </li>
-                <li><a href="{{ url('/lapazdelyo')}}">La Paz del "Yo"</a></li>
-              </ul>
-        		<ul class="nav navbar-nav navbar-right">
-					@guest
+                <ul class="nav navbar-nav navbar-right">
+					@if (Auth::guest())
                             <li><a href="{{ route('login') }}"> Ingresa</a></li>
                             <li><a href="{{ route('register') }}">Registro</a></li>
                         @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
+                    <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+                                    aria-expanded="false"><span class="caret"></span></a>
 
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu">  
+                                 <li><a href="{{ route('home') }}"> Dashboard</a></li>                               
                                     <li>
-                                        <a href="{{ route('logout') }}" onclick="event.preventDefault();  document.getElementById('logout-form').submit();">Salir</a>
-                                        <form id="logout-form" action="{{ route('logout') }}" method="post" style="display: none;">
+                                        <a href="{{url('/logout') }}" onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">Salir</a>
+                                        <form id="logout-form" action="{{ url('/logout') }}" method="post" 
+                                                    style="display: none;">
                                             {{ csrf_field()}}
                                         </form>
                                     </li>
                                 </ul>
                             </li>
-                        @endguest                   
+                        @endif                  
         		</ul>
         	</div>
     	</div>
     </nav>
     
     <div class="wrapper">
-        @yield('content')
-    
+        @yield('content')    
     </div>
    
 
     </body>
 <!--   Core JS Files   -->
-	<script src="{{ asset('js/jquery.min.js')}}" type="text/javascript"></script>
+	<script src="js/jquery.min.js"></script>
 	<script src="{{ asset ('js/bootstrap.min.js')}}" type="text/javascript"></script>
-	<script src="{{ asset('js/material.min.js')}}"></script>
+		
 
-	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-	<script src="{{ asset('js/nouislider.min.js')}}" type="text/javascript"></script>
-
-	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
-	<script src="{{ asset('js/bootstrap-datepicker.js')}}" type="text/javascript"></script>
-
-	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
-	<script src="{{ asset('js/material-kit.js')}}" type="text/javascript"></script>
 
 </html>

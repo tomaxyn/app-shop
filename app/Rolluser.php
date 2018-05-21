@@ -6,8 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Rolluser extends Model
 {
-     public function useras()
+     public function users()
     {
     	return $this->hasMany(User::class);
     }
+
 }
